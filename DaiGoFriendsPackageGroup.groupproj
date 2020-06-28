@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B75F8D28-4AC4-46FD-99FF-2A33F0C05DAD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DaiGoFriendsPackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Samples\DgfPackageSamples.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DaiGoFriendsPackage">
+        <MSBuild Projects="DaiGoFriendsPackage.dproj"/>
+    </Target>
+    <Target Name="DaiGoFriendsPackage:Clean">
+        <MSBuild Projects="DaiGoFriendsPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DaiGoFriendsPackage:Make">
+        <MSBuild Projects="DaiGoFriendsPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DgfPackageSamples">
+        <MSBuild Projects="Samples\DgfPackageSamples.dproj"/>
+    </Target>
+    <Target Name="DgfPackageSamples:Clean">
+        <MSBuild Projects="Samples\DgfPackageSamples.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DgfPackageSamples:Make">
+        <MSBuild Projects="Samples\DgfPackageSamples.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DaiGoFriendsPackage;DgfPackageSamples"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DaiGoFriendsPackage:Clean;DgfPackageSamples:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DaiGoFriendsPackage:Make;DgfPackageSamples:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

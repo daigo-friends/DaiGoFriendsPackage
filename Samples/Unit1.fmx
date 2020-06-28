@@ -1,0 +1,660 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Header: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'DaiGoFriends Package Samples'
+    end
+  end
+  object Footer: TToolBar
+    Align = Bottom
+    Position.Y = 519.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 471.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 3
+    TabPosition = PlatformDefault
+    Sizes = (
+      384s
+      445s
+      384s
+      445s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 69.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ScrollBox1: TScrollBox
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 445.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 384.000000000000000000
+        Viewport.Height = 445.000000000000000000
+        object Layout1: TLayout
+          Align = Top
+          Margins.Top = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Button1: TButton
+            Align = Center
+            Size.Width = 197.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'StringsHolder'
+            OnClick = Button1Click
+          end
+        end
+        object Layout2: TLayout
+          Align = Top
+          Position.Y = 70.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Button2: TButton
+            Align = Center
+            Size.Width = 197.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'TableIniFile'
+            OnClick = Button2Click
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 69.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 445.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 364.000000000000000000
+        Viewport.Height = 441.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Layout3: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label2: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Section'
+              TabOrder = 0
+            end
+            object txtSection1: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 1
+              MaxLength = 50
+              Text = 'SECTION'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Layout4: TLayout
+            Align = Top
+            Position.Y = 35.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Label3: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Key'
+              TabOrder = 0
+            end
+            object txtKey1: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 1
+              MaxLength = 50
+              Text = 'KEY'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Layout5: TLayout
+            Align = Top
+            Position.Y = 60.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Label4: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'String Value'
+              TabOrder = 0
+            end
+            object txtValue1: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 1
+              MaxLength = 50
+              Text = 'VALUE'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Layout6: TLayout
+            Align = Top
+            Position.Y = 85.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object btnWriteString: TButton
+              Align = Center
+              Size.Width = 145.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'WriteString'
+              OnClick = btnWriteStringClick
+            end
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Position.Y = 130.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          object Layout7: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object txtSection2: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'SECTION'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label5: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Section'
+              TabOrder = 1
+            end
+          end
+          object Layout8: TLayout
+            Align = Top
+            Position.Y = 35.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object txtKey2: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'KEY'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label6: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Key'
+              TabOrder = 1
+            end
+          end
+          object Layout9: TLayout
+            Align = Top
+            Position.Y = 60.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Label7: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Default Value'
+              TabOrder = 0
+            end
+            object txtValue2: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 1
+              MaxLength = 50
+              Text = 'DEFAULT'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Layout10: TLayout
+            Align = Top
+            Position.Y = 85.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnRReadString: TButton
+              Align = Center
+              Size.Width = 145.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'ReadString'
+              OnClick = btnRReadStringClick
+            end
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Position.Y = 260.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object Layout11: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object txtSection3: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'SECTION'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label8: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Section'
+              TabOrder = 1
+            end
+          end
+          object Layout12: TLayout
+            Align = Top
+            Position.Y = 35.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object txtKey3: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'KEY'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label9: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Key'
+              TabOrder = 1
+            end
+          end
+          object Layout14: TLayout
+            Align = Top
+            Position.Y = 60.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnDeleteKey: TButton
+              Align = Center
+              Size.Width = 145.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'DeleteKey'
+              OnClick = btnDeleteKeyClick
+            end
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Position.Y = 390.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Layout15: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object txtSection4: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'SECTION'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label10: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Section'
+              TabOrder = 1
+            end
+          end
+          object Layout18: TLayout
+            Align = Top
+            Position.Y = 35.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnReadSection: TButton
+              Align = Center
+              Size.Width = 145.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'ReadSection'
+              OnClick = btnReadSectionClick
+            end
+          end
+        end
+        object ListBoxItem5: TListBoxItem
+          Position.Y = 520.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Layout16: TLayout
+            Align = Top
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnReadSections: TButton
+              Align = Center
+              Size.Width = 145.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'ReadSections'
+              OnClick = btnReadSectionsClick
+            end
+          end
+        end
+        object ListBoxItem6: TListBoxItem
+          Position.Y = 650.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Layout13: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object txtSection6: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'SECTION'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label11: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Section'
+              TabOrder = 1
+            end
+          end
+          object Layout17: TLayout
+            Align = Top
+            Position.Y = 35.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnReadSectionValues: TButton
+              Align = Center
+              Size.Width = 115.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'ReadSectionValues'
+              OnClick = btnReadSectionValuesClick
+            end
+          end
+        end
+        object ListBoxItem7: TListBoxItem
+          Position.Y = 780.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 130.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Layout19: TLayout
+            Align = Top
+            Margins.Top = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object txtSection7: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 0
+              MaxLength = 50
+              Text = 'SECTION'
+              Position.X = 110.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label12: TLabel
+              Align = Left
+              Size.Width = 100.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Section'
+              TabOrder = 1
+            end
+          end
+          object Layout20: TLayout
+            Align = Top
+            Position.Y = 35.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnEraseSection: TButton
+              Align = Center
+              Size.Width = 115.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'EraseSection'
+              OnClick = btnEraseSectionClick
+            end
+          end
+        end
+      end
+    end
+  end
+  object DgfTableIniFile1: TDgfTableIniFile
+    Left = 320
+    Top = 64
+  end
+  object FDTable1: TFDTable
+    Connection = FDConnection1
+    Left = 320
+    Top = 120
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    Left = 320
+    Top = 176
+  end
+  object DgfStringsHolder1: TDgfStringsHolder
+    Lines.Strings = (
+      'This is a component that has only the Lines property.'
+      
+        'Making long strings into constants or resources is tedious. TMem' +
+        'o Components cannot be placed in data modules.'
+      'So I created this component.'
+      
+        'You can open the Lines property in the Object Inspector and edit' +
+        ' the string.'
+      ''
+      'Japanese'
+      #12371#12428#12399'Lines'#12503#12525#12497#12486#12451#12398#12415#12434#25345#12388#12467#12531#12509#12540#12493#12531#12488#12391#12377#12290
+      #38263#12356#25991#23383#21015#12434#23450#25968#12414#12383#12399#12522#12477#12540#12473#12395#12377#12427#12371#12392#12399#38754#20498#12394#20316#26989#12391#12377#12290' '#12513#12514#12467#12531#12509#12540#12493#12531#12488#12399#12487#12540#12479#12514#12472#12517#12540#12523#12395#37197#32622#12391#12365#12414#12379#12435#12290
+      #12381#12371#12391#12289#12371#12398#12467#12531#12509#12540#12493#12531#12488#12434#20316#25104#12375#12414#12375#12383#12290
+      #12458#12502#12472#12455#12463#12488#12452#12531#12473#12506#12463#12479#12391'Lines'#12503#12525#12497#12486#12451#12434#38283#12365#12289#25991#23383#21015#12434#32232#38598#12391#12365#12414#12377#12290)
+    Left = 320
+    Top = 8
+  end
+end
