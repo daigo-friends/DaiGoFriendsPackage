@@ -1,6 +1,5 @@
 /// <summary>
-///   This is an INIFILE component that uses a table.
-///                        Thank you, DELPHI Community Edition
+///   This is an INIFILE component that uses a database table.
 /// </summary>
 /// <copyright>
 ///   Copyright (c) 2020 daigo-friends

@@ -1,3 +1,21 @@
+/// <summary>
+///   This is a component that has only the Lines property.
+/// </summary>
+/// <copyright>
+///   Copyright (c) 2020 daigo-friends
+///   Released under the MIT license
+///   https://opensource.org/licenses/mit-license.php
+/// </copyright>
+///
+/// <remarks>
+/// </remarks>
+///
+/// <see>
+/// </see>
+///
+/// <authors>
+///   tomomori
+/// </authors>
 unit DgfStringsHolder;
 
 interface
