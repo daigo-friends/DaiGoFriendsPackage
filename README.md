@@ -1,0 +1,2 @@
+# DaiGoFriendsPackage
+DaiGoFriends delphi package
