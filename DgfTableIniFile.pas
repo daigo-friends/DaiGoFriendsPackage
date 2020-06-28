@@ -142,6 +142,11 @@ begin
 
   SetTableName;
 
+  if (FTable.Exists) and (not ARecreate) then
+  begin
+    Exit;
+  end;
+
   FTable.DeleteIndexes;
   if FTable.Active then
   begin
